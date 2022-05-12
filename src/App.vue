@@ -1,27 +1,30 @@
 <template>
   <div id="app">
-    <Title />
+    <HelloTitle class="titolo" />
+    <JumbotronImage />
   </div>
 </template>
 
 <script>
-import Title from './components/Title.vue'
+
+import HelloTitle from "./components/HelloTitle.vue";
+import JumbotronImage from "./components/JumbotronImage.vue";
 
 export default {
   name: 'App',
   components: {
-    Title
-  }
+    HelloTitle,
+    JumbotronImage,
+}
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 </style>
